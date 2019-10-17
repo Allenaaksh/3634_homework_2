@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item
+            android:id="@+id/main_menu1"
+            android:layout_width="match_parent"
+            android:title="Main menu"
+            android:icon="@drawable/ic_home_black_24dp"
+            />
+
+
+        <item
+            android:id="@+id/order1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:title="View order"
+           android:icon="@drawable/ic_favorite_border_black_24dp"/>
+
+
+
+</menu>
