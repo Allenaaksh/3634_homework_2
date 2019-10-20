@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearlayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <ImageView
         android:id="@+id/foodpic"
-        android:layout_width="382dp"
-        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
         android:layout_marginEnd="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -17,52 +19,44 @@
         app:srcCompat="@drawable/download" />
 
     <TextView
-        android:id="@+id/fooddisc"
-        android:layout_width="358dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="163dp"
+        android:id="@+id/fooodname"
+        android:layout_width="373dp"
+        android:layout_height="51dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="24dp"
         android:text=" Old School Cheese"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fooddisc"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/foodpic" />
 
     <TextView
-        android:id="@+id/foodname"
-        android:layout_width="339dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
+        android:id="@+id/fooddisc"
+        android:layout_width="368dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="22dp"
+        android:fontFamily="sans-serif"
         android:text="Beef patty,American cheese,onion,mustard, pickles,  BBQ sauce and aioli"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fooddisc" />
-
-    <NumberPicker
-        android:id="@+id/numberPicker"
-        android:layout_width="216dp"
-        android:layout_height="74dp"
-        android:layout_marginBottom="12dp"
-        android:layout_marginEnd="93dp"
-        android:layout_marginStart="75dp"
-        app:layout_constraintBottom_toTopOf="@+id/addtocart"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fooodname" />
+
 
     <Button
         android:id="@+id/addtocart"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginStart="25dp"
+        android:layout_width="412dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="24dp"
         android:background="@android:color/holo_green_dark"
         android:text="Add to cart"
         android:textColor="@android:color/white"
@@ -70,6 +64,23 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
-</LinearLayout>
+    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+        android:id="@+id/numberbutton"
+        android:layout_width="191dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="20dp"
+        app:backGroundColor="@color/colorPrimaryDark"
+        app:finalNumber="20"
+        app:initialNumber="1"
+        app:layout_constraintBottom_toTopOf="@+id/addtocart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:textSize="8sp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

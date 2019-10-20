@@ -14,6 +14,7 @@ public class Food {
     private int price;
 
     private String FoodDesc;
+    private int imageDrawableId;
 
     public Food(int foodID, String foodName, int price, String foodDesc, int imageDrawableId) {
         this.foodID = foodID;
@@ -62,8 +63,6 @@ public class Food {
     public void setImageDrawableId(int imageDrawableId) {
         this.imageDrawableId = imageDrawableId;
     }
-
-    private int imageDrawableId;
 
 
 }

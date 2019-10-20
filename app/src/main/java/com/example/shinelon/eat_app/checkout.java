@@ -1,60 +1,84 @@
 package com.example.shinelon.eat_app;
 
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
-import android.widget.ListView;
+import android.widget.TextView;
+
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class checkout extends Fragment {
+    //static int a =0;
 
+    RecyclerView recyclerView;
+    TextView price;
+    int totalprice = fooddetail.totalprice;
 
     public checkout() {
         // Required empty public constructor
     }
 
+    ArrayList<addFood> addFoodArrayList = fooddetail.addFoodArrayList;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_checkout, container, false);
+        View v = inflater.inflate(R.layout.fragment_checkout, container, false);
+        recyclerView = v.findViewById(R.id.traylist);
+        price = v.findViewById(R.id.price);
+        System.out.println(totalprice);
+        price.setText((Integer.toString(totalprice)));
+        //Toast.makeText(getApplicationContext(), "you are in Food menu now!", Toast.LENGTH_LONG).show();
+        LinearLayoutManager layoutManager = new LinearLayoutManager(v.getContext());
+        recyclerView.setLayoutManager(layoutManager);
+        checkoutadapter adapter = new checkoutadapter();
+        recyclerView.setAdapter(adapter);
+        return v;
+
+
     }
 
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-
-        ListView listView = (ListView) getActivity().findViewById(R.id.traylist);
-        listView.setAdapter(new BaseAdapter() {
-            @Override
-            public int getCount() {
-                return 4;
-            }
-
-            @Override
-            public Object getItem(int i) {
-                return 1;
-            }
-
-            @Override
-            public long getItemId(int i) {
-                return 0;
-            }
-
-            @SuppressLint("ViewHolder")
-            @Override
-            public View getView(int i, View view, ViewGroup viewGroup) {
-                return LayoutInflater.from(getActivity()).inflate(R.layout.list, null);
-            }
-        });
-    }
 }
+
+
+//
+//    @Override
+//    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+//        super.onActivityCreated(savedInstanceState);
+//
+//        ListView listView = (ListView) getActivity().findViewById(R.id.traylist);
+//        listView.setAdapter(new BaseAdapter() {
+//            @Override
+//            public int getCount() {
+//                return addFoodArrayList.size();
+//            }
+//
+//            @Override
+//            public Object getItem(int i) {
+//                return addFoodArrayList.toString();
+//            }
+//
+//            @Override
+//            public long getItemId(int i) {
+//                return 0;
+//            }
+//
+//            @SuppressLint("ViewHolder")
+//            @Override
+//            public View getView(int i, View view, ViewGroup viewGroup) {
+//                return LayoutInflater.from(getActivity()).inflate(R.layout.list, null);
+//            }
+//        });
+//    }
+

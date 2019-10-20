@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "47110281967",
+    "firebase_url": "https://app1-b6845.firebaseio.com",
+    "project_id": "app1-b6845",
+    "storage_bucket": "app1-b6845.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47110281967:android:cf5e34b1d92824199f591a",
+        "android_client_info": {
+          "package_name": "com.example.shinelon.eat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47110281967-j8fvin0htnk2bselvt4h1420aoejf3es.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shinelon.eat_app",
+            "certificate_hash": "552443922c03b1d9bf859fb259af3964297baa34"
+          }
+        },
+        {
+          "client_id": "47110281967-cq3btunb7mb6otgnp978r6lh9o9gin2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9k6q4OBv3F-eii5p_nXyK5fZU1f3XsWs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47110281967-cq3btunb7mb6otgnp978r6lh9o9gin2v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

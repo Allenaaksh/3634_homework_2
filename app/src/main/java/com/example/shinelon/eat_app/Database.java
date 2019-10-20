@@ -83,47 +83,52 @@ public class Database {
         ));
         foods.put(9, new Food(
                 9,
-                "Chips",
-                6,
-                "vwvrwv",
-                R.drawable.chips
+                "Dilmah English Breakfast Tea",
+                3,
+                "Hot Tea",
+                R.drawable.tea
         ));
-        foods.put(8, new Food(
-                8,
-                "BBQ Chicken Biryani",
-                17,
-                "Mughlai style basmati rice cooked with bbq chicken and special spices",
-                R.drawable.chicken_biryani
-        )); foods.put(8, new Food(
-                8,
-                "BBQ Chicken Biryani",
-                17,
-                "Mughlai style basmati rice cooked with bbq chicken and special spices",
-                R.drawable.chicken_biryani
-        )); foods.put(8, new Food(
-                8,
-                "BBQ Chicken Biryani",
-                17,
-                "Mughlai style basmati rice cooked with bbq chicken and special spices",
-                R.drawable.chicken_biryani
-        )); foods.put(8, new Food(
-                8,
-                "BBQ Chicken Biryani",
-                17,
-                "Mughlai style basmati rice cooked with bbq chicken and special spices",
-                R.drawable.chicken_biryani
-        )); foods.put(8, new Food(
-                8,
-                "BBQ Chicken Biryani",
-                17,
-                "Mughlai style basmati rice cooked with bbq chicken and special spices",
-                R.drawable.chicken_biryani
-        )); foods.put(8, new Food(
-                8,
-                "BBQ Chicken Biryani",
-                17,
-                "Mughlai style basmati rice cooked with bbq chicken and special spices",
-                R.drawable.chicken_biryani
+        foods.put(10, new Food(
+                10,
+                "Meat Mixed Plate",
+                25,
+                "Served per person.Lamb*2 Falafel,Kafta,chicken, hummus",
+                R.drawable.meat_mix
+        ));
+        foods.put(11, new Food(
+                11,
+                "Garlic Chicken Roll",
+                12,
+                "With hommus and tabouli",
+                R.drawable.chicken_roll
+        ));
+        foods.put(12, new Food(
+                12,
+                "Chicken and mushroom Gozleme",
+                14,
+                "Premium chicken,mushroom and mozzarella on Turkish flatbread",
+                R.drawable.chicken_gozleme
+        ));
+        foods.put(13, new Food(
+                13,
+                "Sausage and Egg Muffin",
+                7,
+                "With Turkish sausage , free range egg, and mozzarella cheese",
+                R.drawable.sausage
+        ));
+        foods.put(14, new Food(
+                14,
+                "Steamed Chicken with Chilli and Sesame Sauce",
+                14,
+                "Nice Food!!!",
+                R.drawable.steam
+        ));
+        foods.put(15, new Food(
+                15,
+                "Taiwan Assam Milk Tea",
+                6,
+                "Home made milk tea, very good!",
+                R.drawable.milk_tea
         ));
     }
 }
