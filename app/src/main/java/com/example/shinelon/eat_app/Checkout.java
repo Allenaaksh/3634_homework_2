@@ -17,18 +17,18 @@ import java.util.ArrayList;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class checkout extends Fragment {
+public class Checkout extends Fragment {
     //static int a =0;
 
     RecyclerView recyclerView;
     TextView price;
-    int totalprice = fooddetail.totalprice;
+    int totalprice = Fooddetail.totalprice;
 
-    public checkout() {
+    public Checkout() {
         // Required empty public constructor
     }
 
-    ArrayList<addFood> addFoodArrayList = fooddetail.addFoodArrayList;
+    ArrayList<addFood> addFoodArrayList = Fooddetail.addFoodArrayList;
 
 
     @Override
@@ -42,7 +42,7 @@ public class checkout extends Fragment {
         //Toast.makeText(getApplicationContext(), "you are in Food menu now!", Toast.LENGTH_LONG).show();
         LinearLayoutManager layoutManager = new LinearLayoutManager(v.getContext());
         recyclerView.setLayoutManager(layoutManager);
-        checkoutadapter adapter = new checkoutadapter();
+        Checkoutadapter adapter = new Checkoutadapter();
         recyclerView.setAdapter(adapter);
         return v;
 

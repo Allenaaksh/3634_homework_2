@@ -21,10 +21,9 @@ import java.util.ArrayList;
 public class adapter extends RecyclerView.Adapter<adapter.Viewholder> {
 
     private ArrayList<Food> foodToAdapt;
-    // public static ArrayList<addFood> addFoodArrayList = new ArrayList<>();
 
     public void setData(ArrayList<Food> foodToAdapt) {
-        // This is basically a Setter that we use to give data to the adapter
+
         this.foodToAdapt = foodToAdapt;
     }
     @Override
@@ -40,7 +39,7 @@ public class adapter extends RecyclerView.Adapter<adapter.Viewholder> {
             @Override
             public void onClick(View view) {
                 Context context = view.getContext();
-                Intent intent = new Intent(context, fooddetail.class);
+                Intent intent = new Intent(context, Fooddetail.class);
                 intent.putExtra("foodID", foodAtPosition.getFoodID());
                 context.startActivity(intent);
             }
@@ -52,7 +51,7 @@ public class adapter extends RecyclerView.Adapter<adapter.Viewholder> {
             @Override
             public void onClick(View view) {
                 Context context = view.getContext();
-                Intent intent = new Intent(context, fooddetail.class);
+                Intent intent = new Intent(context, Fooddetail.class);
                 intent.putExtra("foodID", foodAtPosition.getFoodID());
                 context.startActivity(intent);
             }
@@ -80,7 +79,6 @@ public class adapter extends RecyclerView.Adapter<adapter.Viewholder> {
         public Viewholder(View itemView) {
             super(itemView);
             foodpicture = itemView.findViewById(R.id.foodpicture);
-            // textview = itemView.findViewById(R.id.content2);
             foodname = itemView.findViewById(R.id.fooddisc);
             price = itemView.findViewById(R.id.price);
             constraintLayout = itemView.findViewById(R.id.constraintlayout);

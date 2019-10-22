@@ -11,11 +11,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class checkoutadapter extends RecyclerView.Adapter<checkoutadapter.Viewholder> {
+public class Checkoutadapter extends RecyclerView.Adapter<Checkoutadapter.Viewholder> {
 
     static int totalprice ;
     static ArrayList<String>  array;
-    ArrayList<addFood> addFoodArrayList = fooddetail.addFoodArrayList;
+    ArrayList<addFood> addFoodArrayList = Fooddetail.addFoodArrayList;
 
     @Override
     public Viewholder onCreateViewHolder(ViewGroup parent, int viewType) {

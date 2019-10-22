@@ -19,7 +19,7 @@ import java.util.ArrayList;
  * Created by Shinelon on 17/10/2019.
  */
 
-public class fooddetail extends AppCompatActivity {
+public class Fooddetail extends AppCompatActivity {
     TextView fooddisc;
     TextView textView1;
     Intent intent;
@@ -30,10 +30,10 @@ public class fooddetail extends AppCompatActivity {
     TextView foodname;
     static int totalprice=0;
 
-    public fooddetail() {
+    public Fooddetail() {
         // Required empty public constructor
     }
-    TextView price1;
+
 
     @Override
 
@@ -54,9 +54,7 @@ public class fooddetail extends AppCompatActivity {
         addtocart = findViewById(R.id.addtocart);
         fooddisc = findViewById(R.id.fooddisc);
         addtocart = findViewById(R.id.addtocart);
-        //price1 = findViewById(R.id.price1);
         intent = getIntent();
-
         foodpic.setImageResource(food.getImageDrawableId());
         fooddisc.setText(food.getFoodDesc());
         fooddisc.setText(food.getFoodDesc());
@@ -79,7 +77,6 @@ public class fooddetail extends AppCompatActivity {
                 addFoodArrayList.add(newfood);
                 Context context = view.getContext();
                 Intent intent = new Intent(context, MainActivity.class);
-                //intent.putExtra("foodID", foodAtPosition.getFoodID());
                 context.startActivity(intent);
                 System.out.println("arraylist size before loop"+addFoodArrayList.size());
                 System.out.println("total price before loop"+totalprice);

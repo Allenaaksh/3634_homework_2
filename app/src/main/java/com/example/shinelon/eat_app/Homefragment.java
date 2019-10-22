@@ -14,14 +14,13 @@ import androidx.recyclerview.widget.RecyclerView;
  * Created by Shinelon on 15/10/2019.
  */
 
-public class Homefragent extends Fragment {
-   // static int totalprice=
+public class Homefragment extends Fragment {
     RecyclerView recyclerView;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.activity_main, container, false);
+        View v = inflater.inflate(R.layout.navibar, container, false);
         recyclerView = v.findViewById(R.id.recyclerview);
         LinearLayoutManager layoutManager = new LinearLayoutManager(v.getContext());
         recyclerView.setLayoutManager(layoutManager);
